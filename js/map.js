@@ -247,3 +247,21 @@ window.filterMarkers = function(type) {
         }
     });
 };
+//SEARCG
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+    searchInput.addEventListener("input", () => {
+        const value = searchInput.value.toLowerCase();
+
+        allMarkers.forEach(marker => {
+            const name = marker.locationData.name.toLowerCase();
+
+            if (name.includes(value)) {
+                marker.addTo(map);
+            } else {
+                map.removeLayer(marker);
+            }
+        });
+    });
+}
