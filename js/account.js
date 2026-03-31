@@ -92,5 +92,5 @@ window.openLocation = function(name) {
 document.getElementById("logoutBtn").onclick = () => {
     localStorage.removeItem("user");
     alert("Logged out!");
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 };
