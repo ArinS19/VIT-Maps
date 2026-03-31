@@ -9,7 +9,15 @@ require("dotenv").config();
 const app = express();
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+    origin: [
+        "https://vitmaps.netlify.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/api/locations", locationRoutes);
 app.use("/api/auth", authRoutes);
