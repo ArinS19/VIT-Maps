@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account - VITMaps</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <style>
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Back button (glass style) */
+.back-btn {
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    backdrop-filter: blur(6px);
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== CONTAINER ===== */
+.account-container {
+    width: 75%;
+    margin: 40px auto;
+}
+
+/* ===== CARDS (GLASS EFFECT) ===== */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== TEXT ===== */
+h2 {
+    margin-bottom: 12px;
+    color: #e2e8f0;
+}
+
+p {
+    color: #cbd5f5;
+}
+
+/* ===== LIST ITEMS ===== */
+.location-item {
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    background: rgba(255,255,255,0.1);
+    color: #e2e8f0;
+}
+
+.location-item strong {
+    color: #ffffff;
+}
+
+/* ===== BUTTONS ===== */
+.location-item button {
+    margin-top: 6px;
+    margin-right: 6px;
+    padding: 6px 12px;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: 0.2s;
+}
+
+.location-item button:hover {
+    background: #3b82f6;
+}
+
+/* ===== LOGOUT ===== */
+.logout-btn {
+    padding: 10px 15px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+    </style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-left">
+        <div class="logo">VITMaps</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">
+            ← Back to Map
+        </button>
+    </div>
+
+    <div class="account">My Account</div>
+
+</header>
+
+<div class="account-container">
+
+    <!-- USER INFO -->
+    <div class="card">
+        <h2>👤 My Details</h2>
+        <p id="userName"></p>
+        <p id="userEmail"></p>
+    </div>
+
+    <!-- FAVORITES -->
+    <div class="card">
+        <h2>⭐ Saved Locations</h2>
+        <div id="favoritesList"></div>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="card">
+        <h2>📝 My Reviews</h2>
+        <div id="myReviews"></div>
+    </div>
+
+    <!-- LOGOUT -->
+    <div class="card">
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+    </div>
+
+</div>
+
+<script src="../js/account.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #acc4e7;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f2937;
+    line-height: 1.6;
+
+    background: 
+        radial-gradient(circle at top left, rgba(255,255,255,0.15), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(0,0,0,0.08), transparent 50%),
+        linear-gradient(135deg, #3a4f7a, #2c3e66, #1f2b47);
+
+    background-attachment: fixed;
+    min-height: 100vh;
+}

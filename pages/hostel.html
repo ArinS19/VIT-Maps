@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostels - VITMaps</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">VITMaps</div>
+        <div class="account">My Account</div>
+    </header>
+
+    <section class="list-container">
+
+    <div class="list-header">
+        <h2>Hostels</h2>
+
+        <div class="list-controls">
+            <input type="text" id="searchInput" placeholder="Search hostels...">
+            <select id="sortSelect">
+                <option value="default">Sort By</option>
+                <option value="rating-high">Rating: High to Low</option>
+                <option value="rating-low">Rating: Low to High</option>
+            </select>
+            <button id="backToMap">Back to Map</button>
+        </div>
+    </div>
+
+    <div id="list-content"></div>
+
+</section>
+
+    <script src="../js/list.js"></script>
+
+</body>
+</html>

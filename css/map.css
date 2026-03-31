@@ -1,0 +1,236 @@
+/* ================= MAP SECTION ================= */
+.map-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#map-container {
+    position: relative;
+    width: 90%;
+    height: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+}
+
+/* ================= POPUP PANEL ================= */
+.map-popup {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    
+    width: 85%;
+    max-width: 900px;
+    height: 65%;              /* 🔥 USE HEIGHT instead */
+    max-height: 500px;        /* optional cap */
+
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+.map-popup.active {
+    transform: translate(-50%, 0);
+}
+
+/* Drag handle (optional but nice) */
+.popup-handle {
+    width: 40px;
+    height: 4px;
+    background: #cbd5e1;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+/* ================= CONTENT ================= */
+.popup-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ================= HEADER ================= */
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Buttons */
+.popup-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.popup-actions button {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #f1f5f9;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.popup-actions button:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* ================= BODY ================= */
+.popup-body {
+    display: flex;
+    gap: 15px;
+    flex :1;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.popup-left {
+    width: 60%;
+    overflow-y: auto;
+    max-height: none;
+}
+
+/* RIGHT SIDE IMAGE */
+.popup-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.popup-right img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ================= TEXT ================= */
+.popup-left p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Rating badge */
+.popup-left .rating {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Section headers */
+.popup-left h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Menu list */
+.popup-left ul {
+    padding-left: 0;
+    margin-top: 6px;
+}
+
+.popup-left ul li {
+    list-style: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #334155;
+    padding-left: 18px;
+    position: relative;
+}
+
+.popup-left ul li::before {
+    content: "⭐";
+    position: absolute;
+    left: 0;
+}
+
+/* Scrollbar */
+.popup-left::-webkit-scrollbar {
+    width: 5px;
+}
+
+.popup-left::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* ================= TOOLTIP ================= */
+.custom-tooltip {
+    background: linear-gradient(135deg, #1f1f3a, #2b2b55);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.leaflet-tooltip-top:before {
+    border-top-color: #2b2b55 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+    z-index: 500 !important;
+}
+#add-review {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;               /* 🔥 spacing fix */
+}
+
+#add-review input {
+    width: 100%;
+    padding: 8px 10px;     /* 🔥 better size */
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+#submitReview {
+    margin-top: 8px;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#submitReview:hover {
+    background: #2563eb;
+}
+#reviews-section {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+}

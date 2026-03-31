@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Gymkhana",
+    "type": "food",
+    "rating": 4.2,
+    "description": "A proper sit-down restaurant on campus serving authentic main courses and specialty cuisines.",
+    "menu": ["Butter Naan", "Paneer Butter Masala", "Chicken Tikka", "Fried Rice"],
+    "coordinates": [12.843577424883442, 80.15265340542219],
+    "image": "assets/images/placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "name": "North Square",
+    "type": "food",
+    "rating": 4.2,
+    "description": "Popular campus food court featuring a variety of quick-service fast food stalls.",
+    "menu": ["Srees", "Georgia Coffee", "Hot and Cool", "Shawarma Man"],
+    "coordinates": [12.844201987720044, 80.1540890123643],
+    "image": "assets/images/north_square.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gazebo",
+    "type": "food",
+    "rating": 4.2,
+    "description": "An open-air multi-cuisine food hub with five distinct sections offering global flavors.",
+    "menu": ["North Indian", "South Indian Tiffins", "Continental", "Chinese Wok", "Fresh Juices & Desserts"],
+    "coordinates": [12.84157403112312, 80.15478941225695],
+    "image": "assets/images/gazebo.png"
+  },
+  {
+    "id": 4,
+    "name": "Aavin",
+    "type": "food",
+    "rating": 4.2,
+    "description": "The go-to spot for dairy treats, offering cold beverages and milk-based snacks.",
+    "menu": ["Ice Cream", "Cold Lassi", "Chocolates", "Flavored Milk"],
+    "coordinates": [12.841895950102968, 80.15612247145741],
+    "image": "assets/images/aavin.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Domino's",
+    "type": "food",
+    "rating": 4.2,
+    "description": "Classic international pizza chain located conveniently on campus.",
+    "menu": ["Margherita Pizza", "Garlic Breadsticks", "Peppy Paneer", "Choco Lava Cake"],
+    "coordinates": [12.8438023235262, 80.15269296800416],
+    "image": "assets/images/dominos.jpg"
+  },
+  {
+    "id": 6,
+    "name": "AB1",
+    "type": "academic",
+    "rating": 4.5,
+    "description": "Academic Block 1 - Home to CSE and IT departments with advanced computer labs.",
+    "menu": [],
+    "coordinates": [12.843522028185552, 80.15380221648736],
+    "image": "assets/images/ab1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "AB2",
+    "type": "academic",
+    "rating": 4.4,
+    "description": "Academic Block 2 - Primarily houses Electronics (SENSE) and Electrical (SELECT) schools.",
+    "menu": [],
+    "coordinates": [12.842984914156983, 80.15630714633576],
+    "image": "assets/images/ab2.jpg"
+  },
+  {
+    "id": 8,
+    "name": "AB3",
+    "type": "academic",
+    "rating": 4.3,
+    "description": "Academic Block 3 - Mechanical and Civil engineering wings with specialized workshops.",
+    "menu": [],
+    "coordinates": [12.843965980375085, 80.15442366983552],
+    "image": "assets/images/ab3.jpg"
+  },
+  {
+    "id": 9,
+    "name": "AB4",
+    "type": "academic",
+    "rating": 4.6,
+    "description": "Academic Block 4 - One of the newer blocks featuring modern classrooms and smart labs.",
+    "menu": [],
+    "coordinates": [12.84329568049693, 80.15552219061719],
+    "image": "assets/images/ab4.jpg"
+  },
+  {
+    "id": 10,
+    "name": "AB5",
+    "type": "academic",
+    "rating": 4.5,
+    "description": "Academic Block 5 - Dedicated research labs and multipurpose academic halls.",
+    "menu": [],
+    "coordinates": [12.841243406170058, 80.15592379331078],
+    "image": "assets/images/ab5.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Sigma",
+    "type": "academic",
+    "rating": 4.5,
+    "description": "Sigma Block - The newest expansion for the growing student population.",
+    "menu": [],
+    "coordinates": [12.844653282412867, 80.15358388350599],
+    "image": "assets/images/delta.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Library",
+    "type": "academic",
+    "rating": 4.8,
+    "description": "Central Library - A vast collection of books, journals, and digital resources with quiet zones.",
+    "menu": [],
+    "coordinates": [12.840953671239989, 80.15396286437634],
+    "image": "assets/images/library.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Admin Block",
+    "type": "academic",
+    "rating": 4.2,
+    "description": "The administrative heart of the campus for fees, registrar, and official documentation.",
+    "menu": [],
+    "coordinates": [12.840756882708007, 80.15384954104815],
+    "image": "assets/images/admin_block.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Reception",
+    "type": "other",
+    "rating": 4.0,
+    "description": "Information center for visitors and parents near the main gate.",
+    "menu": [],
+    "coordinates": [12.840913944987742, 80.15318695254895],
+    "image": "assets/images/reception.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Health Center",
+    "type": "other",
+    "rating": 4.1,
+    "description": "24/7 medical assistance for students and faculty on campus.",
+    "menu": [],
+    "coordinates": [12.841582196862262, 80.15663398029929],
+    "image": "assets/images/health_center.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Clock Court",
+    "type": "other",
+    "rating": 4.7,
+    "description": "Iconic meeting spot at the center of the campus under the giant clock tower.",
+    "menu": [],
+    "coordinates": [12.841232082557507, 80.15460543302359],
+    "image": "assets/images/clock_court.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Amphitheater",
+    "type": "other",
+    "rating": 4.9,
+    "description": "Open-air theater used for cultural events, fests, and student gatherings.",
+    "menu": [],
+    "coordinates": [12.841351951387656, 80.15407343102608],
+    "image": "assets/images/amphitheater.jpg"
+  },
+    {
+    "id": 31,
+    "name": "MG AUditorium",
+    "type": "other",
+    "rating": 4.9,
+    "description": "Open-air theater used for cultural events, fests, and student gatherings.",
+    "menu": [],
+    "coordinates": [12.839637757437512, 80.15513797365159],
+    "image": "assets/images/amphitheater.jpg"
+  },
+      {
+    "id": 32,
+    "name": "Concert Ground",
+    "type": "other",
+    "rating": 4.9,
+    "description": "Open-air theater used for cultural events, fests, and student gatherings.",
+    "menu": [],
+    "coordinates": [12.846305146380486, 80.15857876265684],
+    "image": "assets/images/amphitheater.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Hostel Block A",
+    "type": "hostel",
+    "rating": 3,
+    "description": "One of the primary residential blocks at VIT Chennai, Hostel Block A houses male students and offers a comfortable living environment with essential amenities and easy access to campus facilities.",
+    "menu": [],
+    "coordinates": [12.844349082161498, 80.15254959455949],
+    "image": "assets/images/hostel_block_A.jpg"
+},
+{
+    "id": 19,
+    "name": "Hostel Block B",
+    "type": "hostel",
+    "rating": 3,
+    "description": "Hostel Block B serves as a dedicated residential space for female students at VIT Chennai, providing a safe, structured, and community-oriented living experience within the campus.",
+    "menu": [],
+    "coordinates": [12.842131397728599, 80.15694803268725],
+    "image": "assets/images/hostel_block_B.jpg"
+},
+{
+    "id": 20,
+    "name": "Hostel Block C",
+    "type": "hostel",
+    "rating": 3.5,
+    "description": "Hostel Block C is a uniquely structured residential building at VIT Chennai that accommodates both male and female students, with clearly designated sections to ensure privacy and comfort.",
+    "menu": [],
+    "coordinates": [12.843020423481985, 80.15748229749823],
+    "image": "assets/images/hostel_block_C.jpg"
+},
+{
+    "id": 21,
+    "name": "Hostel Block D1",
+    "type": "hostel",
+    "rating": 3,
+    "description": "A residential block at VIT Chennai Campus. Hostel Block D1 houses the freshmen male students and offers a comfortable living environment with essential amenities and easy access to campus facilities.",
+    "menu": [],
+    "coordinates": [12.843532979709895, 80.15180385247062],
+    "image": "assets/images/hostel_block_D1.jpg"
+},
+{
+    "id": 22,
+    "name": "Hostel Block D2",
+    "type": "hostel",
+    "rating": 3,
+    "description": "A residential block at VIT Chennai, Hostel Block D2 houses second year male students and offers a comfortable living environment with essential amenities and easy access to campus facilities.",
+    "menu": [],
+    "coordinates": [12.844267753063868, 80.15195310431454],
+    "image": "assets/images/hostel_block_D2.jpg"
+},
+{
+    "id": 23,
+    "name": "Hostel Block E",
+    "type": "hostel",
+    "rating": 3,
+    "description": "The newest residential block at VIT Chennai, Hostel Block E is for housing male student guests during events and annual festivals that the university hosts.",
+    "menu": [],
+    "coordinates": [12.844758187005915, 80.16065890617162],
+    "image": "assets/images/hostel_block_E.jpg"
+},
+{
+  "id": 24,
+  "name": "VIT Running Ground",
+  "type": "sports",
+  "rating": 4.4,
+  "description": "Open athletics and jogging ground used for daily practice, sports training, and university events.",
+  "menu": [],
+  "coordinates": [12.842516994723326, 80.15387402116504],
+  "image": "assets/images/vit_running_ground.jpg"
+},
+{
+  "id": 25,
+  "name": "Tennis Court",
+  "type": "sports",
+  "rating": 4.3,
+  "description": "Well-maintained tennis courts used for student practice sessions and inter-college tournaments.",
+  "menu": [],
+  "coordinates": [12.84297312349556, 80.15310160507775],
+  "image": "assets/images/tennis_court.jpg"
+},
+{
+  "id": 26,
+  "name": "Handball Court",
+  "type": "sports",
+  "rating": 4.2,
+  "description": "Dedicated handball court for training sessions and university-level competitions.",
+  "menu": [],
+  "coordinates": [12.842574678502695, 80.15302710253668],
+  "image": "assets/images/handball_court.jpg"
+},
+{
+  "id": 27,
+  "name": "Basketball Court",
+  "type": "sports",
+  "rating": 4.4,
+  "description": "Outdoor basketball court frequently used for practice games and student tournaments.",
+  "menu": [],
+  "coordinates": [12.842503107888843, 80.1533152520771],
+  "image": "assets/images/basketball_court.jpg"
+},
+{
+  "id": 28,
+  "name": "Volleyball Court 1",
+  "type": "sports",
+  "rating": 4.3,
+  "description": "Open volleyball court used for recreational play and university competitions.",
+  "menu": [],
+  "coordinates": [12.841747203866026, 80.15471573391372],
+  "image": "assets/images/volleyball_court.jpg"
+},
+{
+  "id": 30,
+  "name": "Volleyball Court 2",
+  "type": "sports",
+  "rating": 4.3,
+  "description": "Open volleyball court used for recreational play and university competitions.",
+  "menu": [],
+  "coordinates": [12.842175695098282, 80.15346846381709],
+  "image": "assets/images/volleyball_court.jpg"
+},
+{
+  "id": 29,
+  "name": "Cricket Ground",
+  "type": "sports",
+  "rating": 4.5,
+  "description": "Large cricket ground used for practice sessions, inter-college matches, and annual sports events.",
+  "menu": [],
+  "coordinates": [12.842186620071802, 80.1549289879985],
+  "image": "assets/images/cricket_ground.jpg"
+}
+]
