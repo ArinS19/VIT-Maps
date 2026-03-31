@@ -9,7 +9,7 @@ const backBtn = document.getElementById("backToMap");
 
 // 🔙 Back button
 backBtn.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    window.location.href = "../home.html";
 });
 
 // 🔥 Fetch locations
@@ -61,7 +61,7 @@ async function renderList(locations) {
         item.style.cursor = "pointer";
 
         item.addEventListener("click", function() {
-            window.location.href = `../index.html?location=${encodeURIComponent(location.name)}`;
+            window.location.href = `../home.html?location=${encodeURIComponent(location.name)}`;
         });
 
         listContainer.appendChild(item);

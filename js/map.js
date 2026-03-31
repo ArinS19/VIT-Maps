@@ -175,7 +175,7 @@ function showPopup(data) {
     const shareBtn = document.getElementById("shareBtn");
     shareBtn.onclick = () => {
 
-        const url = `${window.location.origin}/index.html?location=${encodeURIComponent(data.name)}`;
+        const url = `${window.location.origin}/home.html?location=${encodeURIComponent(data.name)}`;
 
         navigator.clipboard.writeText(url)
             .then(() => alert("Link copied!"))

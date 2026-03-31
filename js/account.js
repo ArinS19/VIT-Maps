@@ -83,7 +83,7 @@ window.deleteReview = function(id) {
 // ================= OPEN LOCATION =================
 
 window.openLocation = function(name) {
-    window.location.href = `../index.html?location=${encodeURIComponent(name)}`;
+    window.location.href = `../home.html?location=${encodeURIComponent(name)}`;
 };
 
 
