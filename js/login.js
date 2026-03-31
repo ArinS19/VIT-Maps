@@ -34,8 +34,8 @@ submitBtn.addEventListener("click", () => {
     const password = passwordInput.value;
 
     const url = isLogin
-        ? "http://localhost:5000/api/auth/login"
-        : "http://localhost:5000/api/auth/signup";
+        ? "https://vit-maps.onrender.com/api/auth/login"
+        : "https://vit-maps.onrender.com/api/auth/signup";
 
     const body = isLogin
         ? { email, password }

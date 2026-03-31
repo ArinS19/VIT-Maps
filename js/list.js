@@ -13,7 +13,7 @@ backBtn.addEventListener("click", () => {
 });
 
 // 🔥 Fetch locations
-fetch("http://localhost:5000/api/locations")
+fetch("https://vit-maps.onrender.com/api/locations")
     .then(response => response.json())
     .then(data => {
         allLocations = data.filter(location => location.type === pageName);
@@ -29,7 +29,8 @@ async function renderList(locations) {
         let reviews = [];
 
         try {
-            const res = await fetch(`http://localhost:5000/api/reviews/${location._id}`);
+            const res = await fetch(`https://vit-maps.onrender.com/api/reviews/${location._id}`);
+
             reviews = await res.json();
         } catch (err) {
             console.error("Review fetch error:", err);

@@ -3,7 +3,7 @@
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user) {
     alert("Please login first");
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
 }
 // SHOW USER INFO
 document.getElementById("userName").innerText = "Name: " + user.name;
@@ -35,7 +35,7 @@ window.removeFav = function(index) {
 
 // ================= REVIEWS =================
 
-fetch(`http://localhost:5000/api/reviews`)
+fetch(`https://vit-maps.onrender.com/api/reviews`)
     .then(res => res.json())
     .then(data => {
 
@@ -69,7 +69,7 @@ fetch(`http://localhost:5000/api/reviews`)
 
 // DELETE REVIEW
 window.deleteReview = function(id) {
-    fetch(`http://localhost:5000/api/reviews/${id}`, {
+    fetch(`https://vit-maps.onrender.com/api/reviews/${id}`, {
         method: "DELETE"
     })
     .then(() => {

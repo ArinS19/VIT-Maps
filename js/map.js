@@ -40,7 +40,7 @@ function getMarkerIcon(type) {
 
 // ================= LOAD LOCATIONS =================
 
-fetch("http://localhost:5000/api/locations")
+fetch("https://vit-maps.onrender.com/api/locations")
     .then(res => res.json())
     .then(data => {
 
@@ -111,7 +111,7 @@ function showPopup(data) {
 
     // ================= REVIEWS + RATING =================
 
-    fetch(`http://localhost:5000/api/reviews/${data._id}`)
+    fetch(`https://vit-maps.onrender.com/api/reviews/${data._id}`)
         .then(res => res.json())
         .then(reviews => {
 
@@ -205,7 +205,7 @@ function showPopup(data) {
             return;
         }
 
-        fetch("http://localhost:5000/api/reviews", {
+        fetch("https://vit-maps.onrender.com/api/reviews", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
