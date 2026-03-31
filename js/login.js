@@ -54,7 +54,7 @@ submitBtn.addEventListener("click", () => {
         if (isLogin && data.message === "Login successful") {
             localStorage.setItem("user", JSON.stringify(data.user));
             alert("Login successful!");
-            window.location.href = "../index.html";
+            window.location.href = "../home.html";
         } else if (!isLogin && data.message === "User registered successfully") {
             alert("Signup successful! Please login.");
         } else {

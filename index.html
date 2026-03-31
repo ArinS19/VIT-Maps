@@ -1,162 +1,47 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>VITMaps</title>
+    <title>VITMaps - Login</title>
 
-    <link 
-    rel="stylesheet" 
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
-
-    <!-- KEEP ALL YOUR CSS -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/main.css"> <!-- NEW ONE -->
-    <link rel="stylesheet" href="css/map.css">
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
-<body>
+<body class="login-page">
 
-<header class="navbar">
+    <div class="login-container">
 
-    <!-- LEFT -->
-    <div class="nav-left">
-        <div class="brand">
-            <a href="index.html" class="logo-link">
-                <img src="assets/images/logo.png" class="logo-img">
-            </a>
+        <div class="login-image">
+            <img src="/assets/images/loginpage.jpg" alt="Login Image">
         </div>
-    </div>
 
-    <!-- CENTER (SEARCH) -->
-    <div class="nav-center">
-        <input 
-            type="text" 
-            placeholder="Search buildings, food, hostels..." 
-            class="nav-search"
-            id="searchInput"
-        >
-    </div>
+        <div class="login-form">
+            <img src="/assets/images/logo.png" class="login-logo">
 
-    <!-- RIGHT -->
-    <div class="nav-right">
-        <div class="account" onclick="window.location.href='pages/account.html'">
-            My Account
-        </div>
-    </div>
+            <h2 id="formTitle">Welcome</h2>
 
-</header>
+            <p class="subtitle">
+                Access your personalized campus experience
+            </p>
 
-<!-- MAP SECTION (UNCHANGED) -->
-<section class="map-section" id="mapSection">
-    <div id="map-container">
+            <input type="text" id="name" placeholder="Name" style="display: none;">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
 
-        <div id="map-popup" class="map-popup">
-            <div class="popup-content">
+            <button id="submitBtn">Login</button>
 
-                <div class="popup-handle"></div>
-
-                <div class="popup-header">
-                    <h2 id="popup-name">Place Name</h2>
-
-                    <div class="popup-actions">
-                        <button id="shareBtn">Share</button>
-                        <button id="saveBtn">Save</button>
-                        <button id="closePopupBtn">X</button>
-                    </div>
-                </div>
-
-                <div class="popup-body">
-
-                    <div class="popup-left">
-                        <p id="popup-type"></p>
-                        <p id="popup-rating"></p>
-                        <p id="popup-desc"></p>
-
-                        <div id="popup-menu"></div>
-
-                        <div id="reviews-section"></div>
-
-                        <div id="add-review">
-                            <h4>Add Review</h4>
-
-                            <input type="number" id="review-rating" placeholder="Rating (1-5)" min="1" max="5">
-                            <input type="text" id="review-comment" placeholder="Write your review">
-
-                            <button id="submitReview">Submit Review</button>
-                        </div>
-                    </div>
-
-                    <div class="popup-right">
-                        <img id="popup-image" src="" alt="Place Image">
-                    </div>
-
-                </div>
-
-            </div>
+            <p id="toggleText">
+                Don't have an account? <span id="toggleBtn">Sign up</span>
+            </p>
         </div>
 
     </div>
-</section>
 
-<!-- CATEGORY SECTION (UNCHANGED) -->
-<section class="category-section">
-    <h2 class="category-heading">Explore Campus</h2>
-
-    <p class="category-subtext">
-        Discover buildings, hostels, food outlets, and facilities across VIT Chennai
-    </p>
-
-    <div class="categories">
-
-        <div class="category-wrapper">
-            <div class="category-card" data-type="food">
-                <span class="card-icon">🍔</span>
-                <span class="card-title">Food</span>
-            </div>
-            <div class="sub-tabs"></div>
-        </div>
-
-        <div class="category-wrapper">
-            <div class="category-card" data-type="academic">
-                <span class="card-icon">🏢</span>
-                <span class="card-title">Blocks / Admin</span>
-            </div>
-            <div class="sub-tabs"></div>
-        </div>
-
-        <div class="category-wrapper">
-            <div class="category-card" data-type="hostel">
-                <span class="card-icon">🏠</span>
-                <span class="card-title">Hostels</span>
-            </div>
-            <div class="sub-tabs"></div>
-        </div>
-
-        <div class="category-wrapper">
-            <div class="category-card" data-type="sports">
-                <span class="card-icon">🏏</span>
-                <span class="card-title">Sports Areas</span>
-            </div>
-            <div class="sub-tabs"></div>
-        </div>
-
-        <div class="category-wrapper">
-            <div class="category-card" data-type="near-campus">
-                <span class="card-icon">📍</span>
-                <span class="card-title">Near Campus</span>
-            </div>
-            <div class="sub-tabs"></div>
-        </div>
-
-    </div>
-</section>
-
-<!-- JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/map.js"></script>
-<script src="js/cards.js"></script>
-
+    <script src="js/login.js"></script>
 </body>
+
 </html>
+```
